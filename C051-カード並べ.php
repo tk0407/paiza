@@ -27,69 +27,67 @@
 // ・89 + 32 = 121
 // ・83 + 29 = 112
 
+// 自分の得意な言語で
+// Let's チャレンジ！！
+// 標準入力からの入力値を変数に代入します
+$input = trim(fgets(STDIN));
 
-<?php
-    // 自分の得意な言語で
-    // Let's チャレンジ！！
-    // 標準入力からの入力値を変数に代入します
-    $input = trim(fgets(STDIN));
-    
-    // 取得した入力値を半角スペースで分解します
-    $inputs = explode(' ', $input);
-    
-    // 単一行の入力の場合はこれだけで各入力値が配列の要素として使えます
-    // var_dump($input);
-    // var_dump($inputs);
-    $tmp = 0;
-    $total = ($inputs[0] . $inputs[1]) + ($inputs[2] . $inputs[3]) . "\n";
-    if($total>$tmp){
-        $tmp = $total;
-    }
-    $total = ($inputs[0] . $inputs[1]) + ($inputs[3] . $inputs[2]) . "\n";
-    if($total>$tmp){
-        $tmp = $total;
-    }
-    $total = ($inputs[1] . $inputs[0]) + ($inputs[2] . $inputs[3]) . "\n";
-    if($total>$tmp){
-        $tmp = $total;
-    }
-    $total = ($inputs[1] . $inputs[0]) + ($inputs[3] . $inputs[2]) . "\n";
-    if($total>$tmp){
-        $tmp = $total;
-    }
-    $total = ($inputs[0] . $inputs[2]) + ($inputs[1] . $inputs[3]) . "\n";
-    if($total>$tmp){
-        $tmp = $total;
-    }
-    $total = ($inputs[0] . $inputs[2]) + ($inputs[3] . $inputs[1]) . "\n";
-    if($total>$tmp){
-        $tmp = $total;
-    }
-    $total = ($inputs[2] . $inputs[0]) + ($inputs[1] . $inputs[3]) . "\n";
-    if($total>$tmp){
-        $tmp = $total;
-    }
-    $total = ($inputs[2] . $inputs[0]) + ($inputs[3] . $inputs[1]) . "\n";
-    if($total>$tmp){
-        $tmp = $total;
-    }
-    $total = ($inputs[0] . $inputs[3]) + ($inputs[1] . $inputs[2]) . "\n";
-    if($total>$tmp){
-        $tmp = $total;
-    }
-    $total = ($inputs[0] . $inputs[3]) + ($inputs[2] . $inputs[1]) . "\n";
-    if($total>$tmp){
-        $tmp = $total;
-    }
-    $total = ($inputs[3] . $inputs[0]) + ($inputs[1] . $inputs[2]) . "\n";
-    if($total>$tmp){
-        $tmp = $total;
-    }
-    $total = ($inputs[3] . $inputs[0]) + ($inputs[2] . $inputs[1]) . "\n";
-    if($total>$tmp){
-        $tmp = $total;
-    }
-    echo $tmp;
+// 取得した入力値を半角スペースで分解します
+$inputs = explode(' ', $input);
+
+// 単一行の入力の場合はこれだけで各入力値が配列の要素として使えます
+// var_dump($input);
+// var_dump($inputs);
+$tmp = 0;
+$total = ($inputs[0] . $inputs[1]) + ($inputs[2] . $inputs[3]) . "\n";
+if ($total > $tmp) {
+    $tmp = $total;
+}
+$total = ($inputs[0] . $inputs[1]) + ($inputs[3] . $inputs[2]) . "\n";
+if ($total > $tmp) {
+    $tmp = $total;
+}
+$total = ($inputs[1] . $inputs[0]) + ($inputs[2] . $inputs[3]) . "\n";
+if ($total > $tmp) {
+    $tmp = $total;
+}
+$total = ($inputs[1] . $inputs[0]) + ($inputs[3] . $inputs[2]) . "\n";
+if ($total > $tmp) {
+    $tmp = $total;
+}
+$total = ($inputs[0] . $inputs[2]) + ($inputs[1] . $inputs[3]) . "\n";
+if ($total > $tmp) {
+    $tmp = $total;
+}
+$total = ($inputs[0] . $inputs[2]) + ($inputs[3] . $inputs[1]) . "\n";
+if ($total > $tmp) {
+    $tmp = $total;
+}
+$total = ($inputs[2] . $inputs[0]) + ($inputs[1] . $inputs[3]) . "\n";
+if ($total > $tmp) {
+    $tmp = $total;
+}
+$total = ($inputs[2] . $inputs[0]) + ($inputs[3] . $inputs[1]) . "\n";
+if ($total > $tmp) {
+    $tmp = $total;
+}
+$total = ($inputs[0] . $inputs[3]) + ($inputs[1] . $inputs[2]) . "\n";
+if ($total > $tmp) {
+    $tmp = $total;
+}
+$total = ($inputs[0] . $inputs[3]) + ($inputs[2] . $inputs[1]) . "\n";
+if ($total > $tmp) {
+    $tmp = $total;
+}
+$total = ($inputs[3] . $inputs[0]) + ($inputs[1] . $inputs[2]) . "\n";
+if ($total > $tmp) {
+    $tmp = $total;
+}
+$total = ($inputs[3] . $inputs[0]) + ($inputs[2] . $inputs[1]) . "\n";
+if ($total > $tmp) {
+    $tmp = $total;
+}
+echo $tmp;
 
 
 // 問題：C051:カード並べ トロフィー CLEAR!
